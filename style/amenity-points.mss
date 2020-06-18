@@ -521,6 +521,14 @@
     marker-clip: false;
   }
 
+  [feature = 'man_made_windpump'] {
+    [zoom >= 18] {
+      marker-file: url('symbols/man_made/windpump.svg');
+      marker-fill: @man-made-icon;
+      marker-clip: false;
+    }
+  }
+
   [feature = 'man_made_chimney'] {
     [zoom >= 16][height > 50],
     [zoom >= 17][height > 30],
